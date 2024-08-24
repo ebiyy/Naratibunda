@@ -1,11 +1,11 @@
 {
   "expo": {
     "name": "Naratibunda",
-    "slug": "Naratibunda",
+    "slug": "naratibunda",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "naratibunda",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -14,14 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.kuraim22.Naratibunda"
+      "bundleIdentifier": "com.kuraim22.navigation"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.kuraim22.Naratibunda"
+      "package": "com.kuraim22.naratibunda"
     },
     "web": {
       "bundler": "metro",
