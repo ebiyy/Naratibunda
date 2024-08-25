@@ -1,5 +1,10 @@
 {
+    "eslint.workingDirectories": [
+        {
+          "mode": "auto"
+        }
+      ],
     "cSpell.words": [
-        "naratibunda"
+        "narratiact"
     ]
 }
