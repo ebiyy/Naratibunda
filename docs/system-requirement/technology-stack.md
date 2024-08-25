@@ -1,74 +1,68 @@
-# Naratibunda POC技術スタック
+# NarratiAct POC技術スタック
 
-## フロントエンド
+## フロントエンド (Web & デスクトップ)
 
-- **フレームワーク**: React Native with Expo
-  - クロスプラットフォーム開発を可能にし、迅速な開発とデプロイメントを実現
+- **フレームワーク**: Next.js (App Router)
+  - Reactベースの最新のWebアプリケーションフレームワーク
+  - サーバーサイドレンダリング(SSR)とスタティックサイト生成(SSG)のサポート
+- **デスクトップアプリケーション**: Tauri
+  - Rustベースの軽量でセキュアなデスクトップアプリケーションフレームワーク
 - **言語**: TypeScript
   - 型安全性を確保し、開発効率と保守性を向上
-- **ナビゲーション**: Expo Router
-  - ファイルベースのルーティングで直感的なナビゲーション構造を実現
-- **UI/UXライブラリ**:
-  - Expo標準コンポーネント
-  - 必要に応じてReact Native Paperを追加
-- **状態管理**: React Context API
-  - 小規模アプリケーションに適した軽量な状態管理
-- **国際化**: i18n-js with expo-localization
-  - 多言語対応を容易に実装
+- **スタイリング**: Tailwind CSS
+  - ユーティリティファーストのCSSフレームワークで迅速な開発を実現
+- **状態管理**: React Context API + SWR
+  - 軽量な状態管理とデータフェッチの最適化
+- **国際化**: next-intl
+  - Next.js App Routerと統合しやすい国際化ライブラリ
 
 ## バックエンド
 
-- **サーバーレス関数**: Expo EAS (Expo Application Services)
-  - サーバーレスバックエンドでスケーラブルなAPIを構築
-- **データベース**: Supabase
-  - PostgreSQLベースのBaaSで、認証やリアルタイムサブスクリプションを簡単に実装
+- **API**: Hono
+  - 軽量で高速なWebフレームワーク、Cloudflare Workersとの相性が良い
+- **データベース**: Cloudflare D1
+  - エッジで動作するSQLiteベースのデータベース
+- **ストレージ**: Cloudflare R2
+  - S3互換のオブジェクトストレージ、画像保存に使用
 
 ## 開発ツール
 
-- **プロジェクト管理**: Expo CLI
-  - プロジェクトの作成、開発、ビルド、デプロイを一元管理
+- **パッケージマネージャ**: pnpm
+  - 高速で効率的な依存関係管理
+- **モノレポ管理**: Turborepo
+  - 効率的なビルドとタスク実行を提供
 - **バージョン管理**: Git with GitHub
   - ソースコードのバージョン管理とコラボレーションを促進
-- **パッケージマネージャ**: bun
-  - npmやYarnより高速で、TypeScriptのトランスパイルも内蔵
-- **コード品質**: ESLint, Prettier
-  - コーディング規約の遵守と一貫したコードスタイルを維持
-- **テスト**: Jest
-  - ユニットテストの実施
+- **コード品質**: Biome
+  - 高速で統合されたJavaScript/TypeScriptツールチェーン
+- **テスト**: Vitest, Testing Library
+  - 高速なユニットテストとインテグレーションテストの実施
 
 ## デプロイメント
 
-- **ビルドサービス**: EAS Build
-  - iOSとAndroid用のアプリバイナリを自動生成
-- **アップデート配信**: EAS Update
-  - OTA (Over-The-Air) アップデートを簡単に配信
+- **Webホスティング**: Cloudflare Pages
+  - 静的サイトとサーバーサイドレンダリングのホスティング
+- **APIホスティング**: Cloudflare Workers
+  - エッジでのAPIホスティングとサーバーレス関数の実行
+- **デスクトップアプリビルド**: GitHub Actions
+  - Tauriアプリケーションの自動ビルドとリリース
+
+## 認証
+
+- **認証プロバイダ**: Cloudflare Access
+  - Cloudflareのエコシステムと統合された認証ソリューション
 
 ## モニタリング
 
-- **エラー追跡**: EAS Diagnostics
-  - アプリケーションのクラッシュレポートと性能メトリクスを収集
+- **エラー追跡**: Cloudflare Workers Observability
+  - Cloudflare Workersに統合されたモニタリングツール
 
-## セキュリティ
+## 将来の拡張性を考慮したオプション
 
-- **認証**: Supabase Auth
-  - ユーザー認証とセッション管理を簡単に実装
-- **暗号化**: HTTPS (Expo開発サーバーとEASで自動的に提供)
-  - 通信の暗号化とセキュアな接続を確保
-
-## DX向上ツール
-
-- **開発サーバー**: Expo Go
-  - 迅速なイテレーションとデバイステストを可能に
-- **コード生成**: Expo Snippets (VSCode拡張)
-  - 一般的なExpoコンポーネントやAPIのスニペットを提供
-- **デバッグ**: React Native Debugger
-  - 状態インスペクション、ネットワークモニタリング、コンソールログを統合
-- **モックデータ生成**: Faker.js
-  - テストデータの迅速な生成が可能
-- **API開発**: Insomnia
-  - APIのテストと文書化を容易に
-- **ドキュメンテーション**: Docusaurus
-  - プロジェクトドキュメントの作成と管理を簡素化
-- **コードフォーマット**: Husky with lint-staged
-  - コミット前の自動コードフォーマットとリンティング
+- **モバイルアプリ開発**: React Native
+  - 将来的にモバイルアプリが必要になった場合の選択肢
+- **APIレイヤー**: tRPC
+  - 型安全なAPI通信が必要になった場合に導入を検討
+- **リアルタイム通信**: Cloudflare Durable Objects
+  - ステートフルなリアルタイム機能が必要になった場合の選択肢
   

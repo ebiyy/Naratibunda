@@ -1,4 +1,4 @@
-# リポジトリ名: Naratibunda
+# リポジトリ名: NarratiAct
 
 ## 選定プロセス
 
@@ -9,28 +9,31 @@
    - Wisterra (Wisteria + Narrative)
    - Naratibunda (Narrative + Wisteria floribunda)
 
-## 最終選択: Naratibunda
+## 最終選択: NarratiAct
 
 ### 構成
-- 「Nara」: Narrative（物語）の語頭部分
-- 「tibunda」: Wisteria floribunda（フジ）の種小名「floribunda」を変形
+
+- 「Narrati」: Narrative（物語）の語頭部分
+- 「Act」: 行動や実践を意味する
 
 ### 意味の層
+
 - Narrative（物語）: プロジェクトの中心概念
-- Wisteria floribunda（フジ）: 日本の伝統、有機的成長の象徴
-- 「floribunda」: 「たくさんの花を咲かせる」という意味
+- Act（行動）: 実践や挑戦を象徴
 
 ### プロジェクトとの整合性
+
 1. 物語性（Narrative要素）の重視
-2. 有機的な成長と変化（フジの特性）
+2. 行動と実践（Actの特性）
 3. 豊かさや多様性（floribundaの意味）
 
 ### 特徴
+
 - ユニークで記憶に残りやすい
-- 物語と自然の融合を連想させる
+- 物語と行動の融合を連想させる
 - 日本的要素と国際的な響きの両立
 - プロジェクトの多面的な性質を表現
 
 ## 結論
 
-Naratibundaは、プロジェクトの本質である「有機的に成長し変化する物語システム」を効果的に表現し、独創性と魅力を兼ね備えた名前として選択されました。
+NarratiActは、プロジェクトの本質である「有機的に成長し変化する物語システム」を効果的に表現し、独創性と魅力を兼ね備えた名前として選択されました。

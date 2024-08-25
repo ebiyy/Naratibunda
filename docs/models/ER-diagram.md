@@ -1,4 +1,4 @@
-# Naratibunda ER図
+# NarratiAct ER図
 
 ```mermaid
 erDiagram
